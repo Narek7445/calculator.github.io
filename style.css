@@ -13,17 +13,18 @@ body {
 }
 
 #display {
-    width: 80%;
+    width: fit-content;
     height: 40px;
     margin-bottom: 10px;
     text-align: right;
     font-size: 20px;
-    color: #00FF00;
+    color: white;
 }
 
 .buttons {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, auto);
     gap: 5px;
 }
 
@@ -36,6 +37,12 @@ button {
 .equal {
     background-color: red;
     color: white;
+    display: grid;
+    grid-column: span 4;
+}
+
+.equal:hover {
+    background-color: rgb(180, 0, 0);
 }
 
 button:hover {
